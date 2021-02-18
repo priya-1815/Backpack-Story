@@ -1,0 +1,187 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script>
+    function check()
+    {
+      var name1=document.getElementById("name").value;
+      var mail=document.getElementById("email").value;
+      var no=document.getElementById("contact").value;
+      var mess=document.getElementById("message").value;
+      if( name1!= "" && mail!="" && no!="" && mess!="")
+        swal("Message sent successfully!.","Thank you");
+      //else
+       // sweetAlert(" hi","hello","bye");
+
+
+
+
+      /*var x=document.getElementById("contact").value;
+      var y=/\b[1-9]{1}[0-9]{9}/g;
+      if(!(y.test(x)))
+      {
+      document.getElementById("p1").innerHTML="Please enter a valid mobile number";
+      return false;
+      }
+      var a=document.getElementById("i4").value;
+      var b=/([a-z0-9\.]+) @ ([a-z]+) \.([a-z]{2,})/;
+      if(!(b.test(a)))
+
+      {
+      document.getElementById("p2").innerHTML="Please enter a valid email";
+      return false;
+      }*/
+    }
+
+  </script>
+  <style>
+      body {
+         background-image: url("images/cottage.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-color: aliceblue;
+         width:100%;
+         height:100%;
+         font-family: "Times New Roman", Times, serif;
+      }
+      #aa1
+      {
+        color:royalblue;/*navy;*/
+      }
+      .navbar-brand{
+        position:absolute;
+        left:50%;
+        transform:translateX(-50%);
+        top:5%;
+        text-align: center;
+        font-size:30px;
+      }
+    </style>
+</head>
+<body class="font-italic ">
+  <nav class="navbar navbar-expand-sm fixed-top bg-light">
+    <div class="container">
+      <a href="home.html" class="navbar-brand">BACKPACK STORY</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#i1">
+        <span class="navbar-toggler-icon" style="border:1px solid orange; color:black; border-color: black;
+  background-color: gray;"></span>
+      </button> 
+      <div class="collapse navbar-collapse" id="i1">
+      <ul class="navbar-nav text-center">
+        <li class="nav-item"><a href="home.html" class="nav-link">HOME</a></li>
+        <li class="nav-item"><a href="vacp1.html" class="nav-link">VACATION</a></li>
+        
+        <!--<li class="nav-item"><a href="blog.html" class="nav-link">BLOG</a></li>-->
+      </ul>
+      <ul class="navbar-nav text-center ml-auto">
+        
+        <li class="nav-item"><a href="aboutus.html" class="nav-link">ABOUT US</a></li>
+        <li class="nav-item"><a href="contactus.html" class="nav-link">CONTACT US</a></li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  <div style="padding-top:80px;"><h1 class="text-center" id="aa1">CONTACT US</h1></div>
+
+  <div class="container">
+    <h2>GET IN TOUCH</h2><h4>For any queries, just fill in the form below, we will answer you shortly:-</h4><br>
+  <form onsubmit="return false"><!--action="/action_page.php"-->
+    <div class="form-group">
+      <label for="name">NAME</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">E-MAIL</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter eMail" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="contact">CONTACT</label>
+      <input type="number" class="form-control" id="contact" placeholder="Enter Contact" name="contact" required>
+    </div>
+    <div class="form-group">
+      <label for="message">MESSAGE</label>
+      <textarea class="form-control" id="message" placeholder="Type your message here!." name="message" style="height: 200px" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary " onclick="check();" data-toggle="modal" data-target="#myModal">Send Message</button>
+    <!--<div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h4 class="modal-title">MESSAGE</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body" style="background-color: white;">
+        Message successfully sent!.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>-->
+  </form>
+</div>
+<footer class="page-footer font-small ">
+
+  <div class="container-fluid text-center text-md-left mt-5" style="font-size: 18px; background-color:b9eff4;">
+
+    <div class="row mt-3 text-center">
+      <div class="col-sm col-md col-lg col-xl mt-5">
+        <h4 class="text-uppercase font-weight-bold">BACKPACK STORY</h4>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>Backpack Story, we believe that fulfilling travel experiences begin not only with choosing the right destination, but having the right state of mind. Travelers can explore, research, compare prices and book a wide range of services to their travel needs.</p>
+      </div>
+      <div class="col-sm col-md col-lg col-xl mt-5">
+          <img src="images/airplane.jpg" alt="" height="250px" width=100%>
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+
+      <div class="col-sm col-md col-lg col-xl mt-5 text-center">
+        <h4 class="text-uppercase font-weight-bold">Quick Links</h4>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <!--<p><a href="blog.html">Blog</a></p>-->
+        <p><a href="aboutus.html">About Us</a></p>
+        <p><a href="contactus.html">Contact Us</a></p>
+      </div>
+
+      <div class="col-sm col-md col-lg col-xl mt-5">
+
+        <h4 class="text-uppercase font-weight-bold">Contact</h4>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+        <p><i class="fas fa-envelope mr-3"></i> backpackstoty@gmail.com</p>
+        <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+        <!--<p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>-->
+
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-12 py-4">
+        <div class="mb-5 flex-center">
+          <a class="fb-ic"><i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"></i></a>
+          <a class="tw-ic"><i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"></i></a>
+          <a class="gplus-ic"><i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"></i></a>
+          <a class="ins-ic"><i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"></i></a>
+          <a class="pin-ic"><i class="fab fa-pinterest fa-lg white-text fa-2x"> </i></a>
+        </div>
+      </div>
+    </div>
+      <div class="footer-copyright text-center py-0">© 2020 Copyright:
+        <a href="#"> MySite.com</a>
+    </div>
+
+
+  </div>
+  </footer>
+</body>
+</html>
